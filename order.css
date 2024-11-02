@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Kablammo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Splash&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #ee8905;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+ 
+.order-content {
+     padding-left: 3em;
+    width: 100%;
+    height: 100vh;
+}
+ 
+.order-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 210px 0 0;
+}
+
+figure{
+    background-color: rgb(247, 203, 9);
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 3px 3px 10px;
+}
+
+figcaption {
+    padding: 50px 20px 50px 20px;
+    position: relative;
+}
+
+.para-icon {
+    display: flex;
+    justify-content: space-between;
+   /*  position: absolute;
+    top: 5px;
+    margin-inline: 10px; */
+    font-size: 30px;
+    color: #fff;
+}
+
+figcaption .plus-minus{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+figure .fa-heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.active{
+    color: green;
+    cursor: pointer;
+}
+
+.fa-plus{
+    border: 2px solid white;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: teal;
+    cursor: pointer;
+}
+.fa-minus{
+    /* padding-right: 100px; */
+    margin-right: 50px;
+    border: 2px solid white;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: teal;
+    cursor: pointer;
+}
+
+.fa-minus:active {
+    background-color: rgba(0, 128, 128, 0.459);
+}
+
+.fa-plus:active{
+    background-color: rgba(0, 128, 128, 0.459);
+}
+
+figcaption .counter {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    font-size: 30px;
+    color: rgb(7, 22, 230);
+    font-weight: 900;
+}
+
+
+.para-icon h6{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 18px;
+    color: rgb(4, 4, 92);
+    font-weight: 900;
+}
+ 
+
+.order-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: 460px;
+    margin: 7em auto;
+    padding-bottom: 5em;
+}
+
+
+.back-home a{
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+    z-index: 5;
+}
+
+.back-home {
+    padding-bottom: 50px;
+    
+}
+
+.back-home i {
+    margin-inline: 40px;
+    font-size: 60px;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    width: 100%;
+    box-shadow: 3px 3px 15px;
+}
+  
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 1em 1.5em;
+    font-size: 20px;
+    background-color: teal;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+nav li:nth-child(1){
+    background-color: forestgreen;
+}
+
+
+
+.add-p{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    color: rgb(4, 4, 92);
+}
+
+.add{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 22px;
+    background-color: brown;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.added {
+    background-color: green;
+}
+
+
+
+
+
+
+@media(max-width: 1000px){
+    .order-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        grid-auto-rows: 460px;
+        padding-inline: 2em;
+    }
+}
+
+@media(max-width: 700px){
+    .order-content {
+        display: block;
+        gap: 30px;
+        grid-auto-rows: 460px; 
+    }
+
+    figure {
+        margin-top: 30px;
+    }
+
+    body{
+        height: 100vh;
+        background-color: #ee8905;
+        display: grid;
+        place-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        background-color: orange;
+        width: 100%;
+    }
+      
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    nav li {
+        margin: 1em 0.3em;
+        font-size: 16px;
+        background-color: teal;
+        border-radius: 10px;
+        padding: 3px 7px;
+    
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: white;
+    
+    }
+    
+    
+    nav li:nth-child(1){
+        background-color: forestgreen;
+    }
+    
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

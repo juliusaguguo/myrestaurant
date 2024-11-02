@@ -1,0 +1,64 @@
+rgb(255, 128, 0)
+
+
+rgb(255, 30, 0)
+
+
+
+
+
+#faf8f8
+
+
+
+
+
+
+
+
+
+zero 
+<i class="fa-regular fa-star"></i>
+
+full
+<i class="fa-solid fa-star"></i>
+
+
+
+<i class="fa-solid fa-bowl-food"></i>
+
+
+
+<i class="fa-solid fa-truck"></i>
+
+
+<i class="fa-solid fa-seedling"></i>
+
+<i class="fa-solid fa-phone"></i>
+
+<i class="fa-regular fa-envelope"></i>
+
+<i class="fa-brands fa-x-twitter"></i>
+
+<i class="fa-brands fa-linkedin"></i>
+
+<i class="fa-brands fa-github"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-solid fa-arrow-up"></i>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<i class="fa-solid fa-plus"></i>
+
+<i class="fa-solid fa-minus"></i>
+
+
+
+
+<i class="fa-solid fa-arrow-left"></i>
+
+
+
+<i class="fa-regular fa-heart"></i>
