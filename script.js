@@ -58,6 +58,31 @@ starIcon.addEventListener("click", () =>{
 window.addEventListener("scroll", () => {
   document.querySelector("nav").classList.toggle("window-scroll", window.scrollY > 0)
 })
+
+
+/*============= for the footer date ============= */
+ const day = new Date().getFullYear();
+
+ const year = document.querySelector("#year").textContent = day;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
   function toggleMenu(){
     const topNav = document.querySelector(".top-nav");

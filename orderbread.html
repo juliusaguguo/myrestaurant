@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Burger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bread.css">
+</head>
+<body>
+    <div class="container burger-container">
+        <figure>
+            <div class="homeIcon">
+                <a href="index.html"><i class="fa-solid fa-less-than"></i></a>
+            </div>
+            <img src="media/24d29d55f39801b427a9435c8d30e4e1.jpg" alt="burger" width="400px" height="300px">
+            <figcaption>
+                <h2>Honey Bread</h2>
+                <h4>$18.50</h4>
+                <small class="itemWeight">300g</small>
+                <p class="writeUp">Beef burger on crisp baby gem lettuce, heritage tomato, onion and our own burger sauce, topped with your choice of smoked Applewood cheese, Cheddar or American slice.</p>
+                <div class="nutrients">
+                    <div class="kcal">
+                        <h5>343</h5>
+                        <small>Kcal</small>
+                    </div>
+                    <div class="carbs">
+                        <h5>32</h5>
+                        <small>Carbs</small>
+                    </div>
+                    <div class="protein">
+                        <h5>17</h5>
+                        <small>Protein</small>
+                    </div>
+                    <div class="fat">
+                        <h5>16.4</h5>
+                        <small>Fat</small>
+                    </div>
+                </div>
+
+                <div class="person__container">
+                    <div class="person">
+                    <p class="profile">S</p> <h3 class="name">Silvia_A</h3>
+                </div>
+                    <p class="text">So delicious burger! Really recommend! <br><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                </div>
+
+                <div class="add__container">
+                <div class="addbtn">
+                    <button class="minus">-</button>
+                    <button class="output">0</button>
+                    <button class="plus">+</button>
+                </div>
+                <div class="addOrder">
+                    Add to order
+                </div>
+            </div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <script>
+         let counter = 0;
+
+         const addOrder = document.querySelector(".addOrder");
+
+         const output = document.querySelector(".output");
+
+         function updateOutput(){
+            output.textContent = counter;
+         }
+
+         document.querySelector(".plus").addEventListener("click", () =>{
+            counter++;
+            updateOutput()
+         });
+
+         document.querySelector(".minus").addEventListener("click", () => {
+            counter--;
+            updateOutput();
+         });
+
+         
+         addOrder.addEventListener("click", () => {
+            counter = 0;
+            updateOutput();
+
+            addOrder.classList.toggle("added");
+            addOrder.textContent = "Items Added";
+            setTimeout(() =>{
+                addOrder.classList.toggle("added")
+                addOrder.textContent = "Add to order"
+            }, 3000)
+         })
+
+         updateOutput();
+
+         
+    </script>
+</body>
+</html>
